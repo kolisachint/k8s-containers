@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: code-server
+  name: code-server
+spec:
+  containers:
+  - name: code-server
+    image: codercom/code-server:latest
+    ports:
+    - containerPort: 8080
